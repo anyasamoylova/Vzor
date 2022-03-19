@@ -1,9 +1,24 @@
 <resources>
     <string name="app_name">Vzor</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="open_camera">Open camera</string>
     <string name="take_photo">Take photo</string>
     <string name="record_video">Record video</string>
     <string name="start">Start</string>
+    <string name="create_heatmap">Create heatmap for your UI interface with Vzor eye - tracker</string>
+    <string name="predict_heatmap">Predict heatmap for your UI interface with Vzor neuro</string>
+    <string name="home">Home</string>
+    <string name="my_researches">My researches</string>
+    <string name="history">History</string>
+    <string name="skip">Skip</string>
+    <string name="enter_code">Enter code if you are participating in research, skip this step otherwise</string>
+    <string name="digit_7">7</string>
+    <string name="digit_8">8</string>
+    <string name="digit_9">9</string>
+    <string name="digit_4">4</string>
+    <string name="digit_5">5</string>
+    <string name="digit_6">6</string>
+    <string name="digit_1">1</string>
+    <string name="digit_2">2</string>
+    <string name="digit_3">3</string>
+    <string name="digit_0">0</string>
 </resources>

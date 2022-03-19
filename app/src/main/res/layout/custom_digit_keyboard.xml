@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/digit_7"
+        style="@style/Theme.Vzor.Digit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/digit_7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/digit_8"
+        app:layout_constraintBottom_toTopOf="@id/digit_4"/>
+
+    <TextView
+        android:id="@+id/digit_8"
+        style="@style/Theme.Vzor.Digit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/digit_8"
+        app:layout_constraintStart_toEndOf="@id/digit_7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/digit_9"
+        app:layout_constraintBottom_toTopOf="@id/digit_4"/>
+
+    <TextView
+        android:id="@+id/digit_9"
+        style="@style/Theme.Vzor.Digit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/digit_9"
+        app:layout_constraintStart_toEndOf="@id/digit_8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/digit_4"/>
+
+    <TextView
+        android:id="@+id/digit_4"
+        style="@style/Theme.Vzor.Digit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/digit_4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/digit_7"
+        app:layout_constraintEnd_toStartOf="@id/digit_5"
+        app:layout_constraintBottom_toTopOf="@id/digit_1"/>
+
+    <TextView
+        android:id="@+id/digit_5"
+        style="@style/Theme.Vzor.Digit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/digit_5"
+        app:layout_constraintStart_toEndOf="@id/digit_4"
+        app:layout_constraintTop_toBottomOf="@id/digit_7"
+        app:layout_constraintEnd_toStartOf="@id/digit_6"
+        app:layout_constraintBottom_toTopOf="@id/digit_1"/>
+
+    <TextView
+        android:id="@+id/digit_6"
+        style="@style/Theme.Vzor.Digit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/digit_6"
+        app:layout_constraintStart_toEndOf="@id/digit_5"
+        app:layout_constraintTop_toBottomOf="@id/digit_7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/digit_1"/>
+
+    <TextView
+        android:id="@+id/digit_1"
+        style="@style/Theme.Vzor.Digit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/digit_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/digit_4"
+        app:layout_constraintEnd_toStartOf="@id/digit_2"
+        app:layout_constraintBottom_toTopOf="@id/empty"/>
+
+    <TextView
+        android:id="@+id/digit_2"
+        style="@style/Theme.Vzor.Digit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/digit_2"
+        app:layout_constraintStart_toEndOf="@id/digit_1"
+        app:layout_constraintTop_toBottomOf="@id/digit_4"
+        app:layout_constraintEnd_toStartOf="@id/digit_3"
+        app:layout_constraintBottom_toTopOf="@id/empty"/>
+
+    <TextView
+        android:id="@+id/digit_3"
+        style="@style/Theme.Vzor.Digit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/digit_3"
+        app:layout_constraintStart_toEndOf="@id/digit_2"
+        app:layout_constraintTop_toBottomOf="@id/digit_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/empty"/>
+
+    <TextView
+        android:id="@+id/empty"
+        style="@style/Theme.Vzor.Digit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/digit_1"
+        app:layout_constraintEnd_toStartOf="@id/digit_0"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/digit_0"
+        style="@style/Theme.Vzor.Digit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/digit_0"
+        app:layout_constraintStart_toEndOf="@id/empty"
+        app:layout_constraintTop_toBottomOf="@id/digit_1"
+        app:layout_constraintEnd_toStartOf="@id/btnErase"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <FrameLayout
+        android:id="@+id/btnErase"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toEndOf="@id/digit_0"
+        app:layout_constraintTop_toBottomOf="@id/digit_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_erase_24" />
+
+    </FrameLayout>
+
+
+</merge>

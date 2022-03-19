@@ -15,6 +15,7 @@ import software.girls.vzor.R
 import software.girls.vzor.checkCameraPermission
 import software.girls.vzor.checkOverlayPermission
 import software.girls.vzor.databinding.FragmentHomeBinding
+import software.girls.vzor.screen.code.EnterCodeFragment
 import software.girls.vzor.screen.floating_camera.FloatingWindowService
 import software.girls.vzor.screen.home.elm.Effect
 import software.girls.vzor.screen.home.elm.Event
@@ -40,7 +41,9 @@ class HomeFragment private constructor(): ElmFragment<Event, Effect, State>(R.la
     override fun handleEffect(effect: Effect) =
         when (effect) {
             Effect.OpenFloatingWindow -> {
-                startFloatingWindowService()
+                //TODO temp logic
+                openCodeFragment()
+                //startFloatingWindowService()
             }
             is Effect.ShowError -> {
                 showError(effect.error)
@@ -69,7 +72,7 @@ class HomeFragment private constructor(): ElmFragment<Event, Effect, State>(R.la
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnStartService.setOnClickListener {
+        binding.btnCreateHeatmap.setOnClickListener {
             store.accept(Event.Ui.OpenFloatingWindowClick)
         }
     }
@@ -85,6 +88,13 @@ class HomeFragment private constructor(): ElmFragment<Event, Effect, State>(R.la
     private fun showError(error: String) {
         Toast.makeText(requireActivity(), error, Toast.LENGTH_SHORT)
             .show()
+    }
+
+    private fun openCodeFragment(){
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(R.id.fragmentContainer, EnterCodeFragment())
+            .addToBackStack(null)
+            .commitAllowingStateLoss()
     }
 
     private fun startFloatingWindowService() {

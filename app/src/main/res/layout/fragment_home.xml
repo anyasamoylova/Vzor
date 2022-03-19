@@ -3,14 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".screen.home.HomeFragment"
-    android:gravity="center">
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_start_service"
+    <TextView
+        android:id="@+id/btnCreateHeatmap"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="@string/start"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/create_heatmap"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/btnPredictHeatmap"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/predict_heatmap"
+        android:gravity="center"
+        android:padding="15dp"/>
+
 
 </LinearLayout>

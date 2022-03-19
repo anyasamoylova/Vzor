@@ -1,6 +1,7 @@
 package software.girls.vzor.screen
 
 import android.os.Bundle
+import android.provider.DocumentsContract
 import androidx.appcompat.app.AppCompatActivity
 import software.girls.vzor.R
 import software.girls.vzor.screen.home.HomeFragment
@@ -17,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun openHomeFragment() {
         supportFragmentManager.beginTransaction()
-            .replace(R.id.fragmentContainer, HomeFragment.newInstance())
+            .replace(R.id.fragmentContainer, RootFragment.newInstance())
             .commitAllowingStateLoss()
     }
 }

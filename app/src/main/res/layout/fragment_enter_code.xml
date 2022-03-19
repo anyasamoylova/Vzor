@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="30dp">
+
+    <LinearLayout
+        android:id="@+id/btnSkip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="35dp"
+        android:gravity="center_vertical|end"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Theme.Vzor.ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/skip" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_chevron_right" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/Theme.Vzor.Text.SmallText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_code" />
+
+    <software.girls.vzor.custom_view.code_keyboard_view.EnterCodeView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
